@@ -306,7 +306,7 @@ export const prerender = true;
 	</div>
 </section>
 <section
-	class="text-white px-4 md:p-0 w-4/5 mx-auto md:w-4/5 gap-10 flex flex-col"
+	class="text-white relative px-4 md:p-0 w-4/5 mx-auto md:w-4/5 md:gap-28 flex flex-col"
 	id="how-it-works"
 >
 	<div class="text-center flex flex-col py-16 px-4 md:p-0 md:w-1/2 md:py-32 md:mx-auto">
@@ -331,7 +331,7 @@ export const prerender = true;
 		</div>
 	</div>
 	<div class="flex flex-col items-center md:flex-row w-full md:justify-between">
-		<img class="w-1/2 md:w-1/3" alt="Step 2" src="/assets/illustrations/step-2.svg" />
+		<img class="w-1/2 md:w-1/3 order-2" alt="Step 2" src="/assets/illustrations/step-2.svg" />
 		<div
 			class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
 		>
@@ -351,13 +351,21 @@ export const prerender = true;
 			class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
 		>
 			<div class="enumerator">3</div>
-			<h4 class="text-3xl font-medium md:text-[42px]">Start generating 🚀</h4>
+			<h4 class="text-3xl font-medium md:text-[42px]">Start generating &#x1F680;</h4>
 			<p class="text-sm leading-normal md:text-lg opacity-60">
 				When the framework is ready, it will be added to the web platform such that your team can
 				start generating content.
 			</p>
 		</div>
 	</div>
+	<div class="absolute hidden md:block -z-10" id="shape-7" />
+	<div class="absolute hidden md:block -z-10" id="shape-8" />
+	<div class="absolute hidden md:block -z-10" id="shape-9" />
+	<div class="absolute hidden md:block -z-10" id="shape-10" />
+	<div class="absolute hidden md:block -z-10" id="shape-11" />
+	<div class="absolute hidden md:block -z-10" id="shape-12" />
+	<img class="absolute hidden md:block -z-10" src="/assets/illustrations/dotted-line.svg" id="shape-13" />
+	<img class="absolute hidden md:block -z-10" src="/assets/illustrations/dotted-line-2.svg" id="shape-14" />
 </section>
 <section
 	class="relative h-screen md:p-20 flex flex-col md:flex-row md:items-center md:justify-between py-20"
@@ -699,30 +707,38 @@ export const prerender = true;
 		flex-shrink: 0;
 		width: 800px;
 	}
-	#grow {
-		background-image: url('/assets/illustrations/grow-mobile-bg.svg');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	@media (min-width: 746px) {
-		#grow {
-			background-image: url('/assets/illustrations/grow-bg.svg');
-			background-repeat: no-repeat;
-			background-position: -10px -10px;
-			background-size: 120%;
-		}
-	}
-	.check {
-		position: relative;
-	}
-	.check::before {
-		content: url('/assets/icons/checkmark-square.svg');
-		display: inline-block;
-		position: relative;
-		top: 8px;
-		right: 8px;
-	}
 	#shape-7 {
+		border-radius: 460.076px;
+		opacity: 0.34;
+		background: rgba(88, 182, 248, 0.40);
+		filter: blur(90.70046997070312px);
+		width: 460.076px;
+		height: 460.076px;
+		left: 223px;
+		top: 420px;
+	}
+	#shape-8 {
+		width: 398.414px;
+		height: 398.414px;
+		flex-shrink: 0;
+		border-radius: 398.414px;
+		opacity: 0.34;
+		background: rgba(0, 192, 255, 0.15);
+		filter: blur(113.45620727539062px);
+		left: 379px;
+		top: 680px;
+	}
+	#shape-9 {
+		width: 559.475px;
+		height: 559.475px;
+		border-radius: 559.475px;
+		opacity: 0.34;
+		background: rgba(190, 169, 254, 0.60);
+		filter: blur(134.64569091796875px);
+		right: 352px;
+		top: 550px;
+	}
+	#shape-10 {
 		border-radius: 367px;
 		background: rgba(0, 192, 255, 0.15);
 		filter: blur(113.45620727539062px);
@@ -732,15 +748,38 @@ export const prerender = true;
 		right: 507px;
 		bottom: 180px;
 	}
-	#shape-8 {
+	#shape-11 {
 		border-radius: 515px;
 		background: rgba(190, 169, 254, 0.6);
 		filter: blur(134.64569091796875px);
+		opacity: 0.34;
 		width: 515px;
 		height: 515px;
 		flex-shrink: 0;
 		right: 221px;
 		bottom: 151px;
+	}
+	#shape-12 {
+		width: 460.076px;
+		height: 460.076px;
+		right: 465px;
+		bottom: 324px;
+		border-radius: 460.076px;
+		opacity: 0.34;
+		background: rgba(88, 182, 248, 0.40);
+		filter: blur(90.70046997070312px);
+	}
+	#shape-13 {
+		width: 529px;
+		height: 126px;
+		left: 255px;
+		top: 850px;
+	}
+	#shape-14 {
+		width: 528px;
+		height: 126px;
+		left: 253px;
+		top: 1270px;
 	}
 	.enumerator {
 		border-radius: 32px;
@@ -757,10 +796,31 @@ export const prerender = true;
 		font-weight: 700;
 		color: black;
 	}
+	#grow {
+		background-image: url('/assets/illustrations/grow-mobile-bg.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.check {
+		position: relative;
+	}
+	.check::before {
+		content: url('/assets/icons/checkmark-square.svg');
+		display: inline-block;
+		position: relative;
+		top: 8px;
+		right: 8px;
+	}
 	@media (min-width: 746px) {
 		.enumerator {
 			width: 50px;
 			height: 50px;
+		}
+		#grow {
+			background-image: url('/assets/illustrations/grow-bg.svg');
+			background-repeat: no-repeat;
+			background-position: -10px -10px;
+			background-size: 120%;
 		}
 	}
 </style>
