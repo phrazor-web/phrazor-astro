@@ -1,0 +1,62 @@
+<header
+	class="flex sticky top-0 left-0 z-50 h-20 items-center px-8 md:px-20 justify-between border-[#1D1D1D] border-b-[1px]"
+>
+	<img src="/assets/images/logo.png" alt="logo" class="h-6 w-auto" />
+	<button class="flex flex-col justify-around h-6 w-6 md:hidden">
+		<div class="h-0.5 w-full rounded-full bg-[#84818A]" />
+		<div class="h-0.5 w-full rounded-full bg-[#84818A]" />
+	</button>
+	<nav id="md" class="gap-10 items-center hidden md:flex">
+		<button class="flex relative group group-hover:text-[#13B6EC]"
+			><div id="products-toggle-md" class="cursor-pointer flex items-center gap-2">
+				Products<img src="/assets/icons/arrow.svg" alt="arrow" class="w-2" />
+			</div>
+			<div
+				class="opacity-0 -translate-y-2.5 bg-black z-50 p-4 rounded absolute flex flex-col top-full mt-10 w-40"
+			>
+				<a
+					class="hover:bg-[rgba(0,_192,_255,_0.10)] text-start w-full rounded px-2 py-4 whitespace-nowrap hover:text-[#00C0FF]"
+					href="#">Menu item 1</a
+				>
+				<a
+					class="hover:bg-[rgba(0,_192,_255,_0.10)] text-start w-full rounded px-2 py-4 whitespace-nowrap hover:text-[#00C0FF]"
+					href="#">Menu item 2</a
+				>
+				<a
+					class="hover:bg-[rgba(0,_192,_255,_0.10)] text-start w-full rounded px-2 py-4 px-10 whitespace-nowrap hover:text-[#00C0FF]"
+					href="#">Menu item 3</a
+				>
+			</div>
+		</button>
+		<a href="#">Platform</a>
+		<a href="#">Blog</a>
+		<a href="https://calendly.com/phrazor/phrazor-oi-introductory-meeting" class="btn w-32 primary"
+			>Get a demo</a
+		>
+		<button class="btn w-32">Login</button>
+	</nav>
+	<nav
+		id="mb"
+		style="display: none;"
+		class="absolute top-20 px-4 w-screen h-[calc(100vh-5rem)] left-0 z-50 bg-[#121212] flex-col gap-4 md:hidden items-center py-20"
+	>
+		<button
+			class="flex flex-col h-16 overflow-hidden justify-start items-center bg-[rgba(255,_255,_255,_0.10)] rounded w-full"
+			><div id="products-toggle" class="cursor-pointer flex items-center gap-2 min-h-[4rem]">
+				Products<img src="/assets/icons/arrow.svg" alt="arrow" class="w-2" />
+			</div>
+			<div class="flex flex-col items-center gap-8 py-10">
+				<a href="#">Menu item 1</a>
+				<a href="#">Menu item 3</a>
+				<a class="" href="#">Menu item 2</a>
+			</div>
+		</button>
+		<a href="#">Platform</a>
+		<a href="#">Blog</a>
+		<a
+			href="https://calendly.com/phrazor/phrazor-oi-introductory-meeting"
+			class="btn !aspect-[4/1] !text-lg w-full primary mt-10">Get a demo</a
+		>
+		<button class="btn !aspect-[4/1] !text-lg w-full ghost">Login</button>
+	</nav>
+</header>
