@@ -307,7 +307,7 @@ export const prerender = true;
 	</h3>
 	<div class="relative w-full md:w-1/2">
 		<input type="email" class="w-full py-6 px-4 rounded-[10px]" placeholder="Enter your email address" />
-		<button class="absolute right-2 bottom-2 rounded-[10px] p-4 bg-black text-white get-started"
+		<button class="absolute right-1.5 bottom-1.5 rounded-[10px] p-4 border-2 border-black bg-black transition-colors hover:bg-transparent hover:text-black text-white get-started"
 			>Get started now</button
 		>
 	</div>
@@ -588,14 +588,14 @@ export const prerender = true;
 	</div>
 	<div class="flex w-full md:w-2/5 justify-between mt-10">
 		<div class="flex flex-col gap-4">
-			<h3 class="font-bold mb-2">Product</h3>
+			<h3 class="font-bold mb-2 hidden">Product</h3>
 			<a href="/framework">Framework</a>
 			<a href="/framework">Placeholder 1</a>
 			<a href="/framework">Placeholder 2</a>
 			<a href="/framework">Placeholder 3</a>
 		</div>
 		<div class="flex flex-col gap-4">
-			<h3 class="font-bold mb-2">Product</h3>
+			<h3 class="font-bold mb-2 hidden">Product</h3>
 			<a href="/framework">About Us</a>
 			<a href="/framework">Values</a>
 			<a href="/framework">Careers</a>
@@ -603,9 +603,9 @@ export const prerender = true;
 		</div>
 		<div class="flex flex-col gap-4">
 			<h3 class="font-bold mb-2">Access</h3>
-			<a href="/framework">Blog</a>
+			<a  class="hidden" href="/framework">Blog</a>
 			<a href="/https://calendly.com/phrazor/phrazor-oi-introductory-meeting">Book a demo</a>
-			<a href="/framework">Login</a>
+			<a href="#">Login</a>
 		</div>
 	</div>
 	<img
