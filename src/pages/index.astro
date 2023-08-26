@@ -277,7 +277,7 @@ export const prerender = true;
 	</div>
 	<a
 		href="https://calendly.com/phrazor/phrazor-oi-introductory-meeting"
-		class="btn primary w-32 mt-6 md:mt-12 !pr-1 grou mb-20"
+		class="btn primary flex w-40 !text-base mt-6 md:mt-12 !pr-1 group mb-20"
 		>Get a demo <img
 			src="/assets/icons/triangle-right.svg"
 			class="w-4 group-hover:translate-x-1 transition-transform"
@@ -901,7 +901,7 @@ export const prerender = true;
 	});
 	const header = document.querySelector('header');
 	let scrolled = false;
-	let prodMdOpen = false;
+	let prodMdState: "hidden" | "visible" = "hidden";
 	window.addEventListener("scroll", (e)=>{
 		// if scroll is bigger than 0 transition header bg to black
 		if (window.scrollY > 0 && !scrolled) {
@@ -932,11 +932,17 @@ export const prerender = true;
 	})
 	const prodToggleMdEl = document.getElementById("products-toggle-md");
 	console.log(prodToggleMdEl);
-	const prodToggleMd = () => {
-		prodMdOpen = !prodMdOpen;
+	const prodToggleMd = (state) => {
+		if(state) { 
+			prodMdState = state;
+		} else {
+			prodMdState === "hidden" ? prodMdState = "visible" : prodMdState = "hidden";
+		}
 		const el = prodToggleMdEl.nextElementSibling;
-		if (prodMdOpen) {
+		if (prodMdState === "visible") {
 			// transition fade in and out translateY
+			prodToggleMdEl.firstElementChild.firstElementChild.style="fill: #13B6EC;";
+			prodToggleMdEl.style.color="#13B6EC";
 			el.animate(
 				[
 					{ opacity: 0, transform: 'translateY(-10px)' },
@@ -958,13 +964,22 @@ export const prerender = true;
 					fill: 'forwards'
 				}
 			);
+			prodToggleMdEl.style.color="white";
+			prodToggleMdEl.firstElementChild.firstElementChild.style="fill: white;";
 		}
 	}
 	prodToggleMdEl.addEventListener('click', () => {
 		console.log('click');
-		prodToggleMd();
 	});
-
+	// click outside
+	window.addEventListener("click", (e)=>{
+		console.log(e.target.parentElement);
+		if(e.target.closest("#products")) {
+			prodToggleMd();
+		} else if(prodMdState === "visible") {
+			prodToggleMd("hidden")
+		}
+	})
 	// Sanity upload
 	for (const btn of document.querySelectorAll(".get-started")) {
 		const input = btn.previousElementSibling;
