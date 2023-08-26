@@ -72,4 +72,7 @@
     width: 100vw;
     overflow-x: hidden;
   }
-  
+
+.disabled {
+  opacity: 50%;
+}

@@ -985,14 +985,22 @@ export const prerender = true;
 		const input = btn.previousElementSibling;
 		btn.addEventListener("click", async () => {
 			if(input.value) {
-				const res = await fetch("/api/signup", {
+				const res = fetch("/api/signup", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json"
 					},
 					body: JSON.stringify({ email: input.value })
 				});
-				console.log(res);
+				btn.disabled = true;
+				btn.classList.add("disabled");
+				res.then((res)=>{
+					if(res.status === 200) {
+						btn.disabled = false;
+						btn.classList.remove("disabled")
+						input?.parentElement?.after("Thanks for signing up!")
+					}
+				})
 			}
 		});
 	}
