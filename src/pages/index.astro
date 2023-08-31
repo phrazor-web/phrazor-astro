@@ -23,7 +23,8 @@ export const prerender = true;
 		});
 	});
 </script>
-<section id="atf" class="relative w-screen pt-20 md:flex md:pl-20">
+<section id="atf" class="relative w-screen pt-20 md:flex md:pl-20">	
+	<img src="/assets/illustrations/grid.svg" alt="hero illustration" class="-z-20 absolute hidden md:block w-full h-screen left-0 top-0" />
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		viewBox="0 0 277 391"
@@ -91,8 +92,8 @@ export const prerender = true;
 		</defs>
 	</svg>
 	<div class="flex flex-col items-center md:items-start text-center md:text-start gap-4 px-4">
-		<h1 class="font-bold text-2xl md:text-6xl">
-			<span class="gradient-heading">Customized</span> content in an instant
+		<h1 class="font-bold text-2xl md:text-5xl">
+			<span class="gradient-heading">Customized</span> content in an <br> instant
 		</h1>
 		<h2 class="font-light text-sm leading-6 md:text-lg">
 			Unlock the power of our one-stop AI-powered platform and effortlessly generate <span
@@ -182,22 +183,22 @@ export const prerender = true;
 </section>
 <section
 	id="text"
-	class="flex w-screen px-10 gap-4 md:w-screen justify-around items-center md:py-20 flex-wrap"
+	class="flex w-screen px-10 gap-4 justify-around md:justify-center md:gap-40 items-center md:py-20 flex-wrap"
 >
 	<p class="flex gap-4 items-center">
-		<span class="font-bold text-3xl md:text-7xl">10M+</span>
+		<span class="font-bold text-3xl md:text-6xl">10M+</span>
 		<span class="opacity-50 text-[10px] md:text-lg">
 			Words <br /> Generated
 		</span>
 	</p>
 	<p class="flex gap-4 items-center">
-		<span class="font-bold text-3xl md:text-7xl">06</span>
+		<span class="font-bold text-3xl md:text-6xl">06</span>
 		<span class="opacity-50 text-[10px] md:text-lg">
 			Represented <br /> Languages
 		</span>
 	</p>
 	<p class="flex gap-4 items-center">
-		<span class="font-bold text-3xl md:text-7xl">01</span>
+		<span class="font-bold text-3xl md:text-6xl">01</span>
 		<span class="opacity-50 text-[10px] md:text-lg">
 			Click to create <br /> unique content
 		</span>
@@ -205,19 +206,19 @@ export const prerender = true;
 </section>
 <div class="w-4/5 border-b-[1px] border-white opacity-10 mx-auto mt-10" />
 <section class="flex flex-col w-screen items-center overflow-x-clip px-8 mt-20" id="why-phrazer">
-	<h3 class="text-[#13B6EC] text-sm md:text-lg font-medium text-center md:mb-2">Why Phrazer.io</h3>
-	<h2 class="text-3xl md:text-4xl font-bold leading-tight text-center mb-3">
+	<h3 class="text-[#13B6EC] text-sm md:text-base font-medium text-center md:mb-2">Why Phrazer.io</h3>
+	<h2 class="text-3xl md:text-3xl font-bold leading-tight text-center mb-3">
 		Create more high-<br class="md:hidden" />quality
 		<span class="gradient-heading">content faster</span>
 	</h2>
-	<p class="text-sm md:text-lg leading-normal opacity-60 w-5/6 md:w-1/2 text-center mb-7 md:mb-12">
+	<p class="text-sm md:text-base leading-normal opacity-60 w-5/6 md:w-1/2 text-center mb-7 md:mb-12">
 		No to generic, unreliable AI-generated content. Yes to scaling your content production
 		efficiently with dependable, tailored output.
 	</p>
 	<div class="w-full overflow-x-scroll md:overflow-hidden">
 		<div style="scroll-snap-type: x mandatory;" class="flex gap-10 md:justify-center justify-start w-[360vw] md:w-full text-center">
 			<div
-				class="flex flex-col w-1/5 gap-8 items-center rounded-lg bg-[rgba(255,_255,_255,_0.08)] p-3 pb-10"
+				class="flex flex-col w-1/5 gap-8 items-center rounded-lg bg-[rgba(255,_255,_255,_0.08)] md:w-1/6 p-3 pb-10"
 			>
 				<img
 					class="bg-opacity-20 w-full py-[20%] px-[40%] rounded-lg bg-[#00C0FF]"
@@ -225,13 +226,13 @@ export const prerender = true;
 					alt="Note Icon"
 				/>
 				<h4 class="font-bold text-xl leading-normal">Content tailored to your needs</h4>
-				<p class="text-base leading-[1.4] text-[#6E6F6F]">
+				<p class="text-base md:text-sm leading-[1.4] text-[#6E6F6F]">
 					Get rid of generic content. Use phrazor.io frameworks to generate unique content with your
 					own properties for readers and search engines to read and rate.
 				</p>
 			</div>
 			<div
-				class="flex flex-col w-1/5 gap-8 items-center rounded-lg bg-[rgba(255,_255,_255,_0.08)] p-3 pb-10"
+				class="flex flex-col w-1/5 gap-8 items-center rounded-lg bg-[rgba(255,_255,_255,_0.08)] md:w-1/6 p-3 pb-10"
 			>
 				<img
 					class="bg-opacity-20 w-full py-[20%] px-[40%] rounded-lg bg-[#9747FF]"
@@ -239,14 +240,14 @@ export const prerender = true;
 					alt="Database Icon"
 				/>
 				<h4 class="font-bold text-xl leading-normal">Up to date dependable information</h4>
-				<p class="text-base leading-[1.4] text-[#6E6F6F]">
+				<p class="text-base md:text-sm leading-[1.4] text-[#6E6F6F]">
 					Our huge data library provides real-time, accurate data. Integrate your own sources or
 					enter it manually. Either way, you get reliable results without AI-generated incorrect
 					information.
 				</p>
 			</div>
 			<div
-				class="flex flex-col w-1/5 gap-8 items-center rounded-lg bg-[rgba(255,_255,_255,_0.08)] p-3 pb-10"
+				class="flex flex-col w-1/5 gap-8 items-center rounded-lg bg-[rgba(255,_255,_255,_0.08)] md:w-1/6 p-3 pb-10"
 			>
 				<img
 					class="bg-opacity-20 w-full py-[20%] px-[40%] rounded-lg bg-[#1DBF73]"
@@ -254,13 +255,13 @@ export const prerender = true;
 					alt="Clock Icon"
 				/>
 				<h4 class="font-bold text-xl leading-normal">Make the most of your time</h4>
-				<p class="text-base leading-[1.4] text-[#6E6F6F]">
+				<p class="text-base md:text-sm leading-[1.4] text-[#6E6F6F]">
 					Instead of spending time researching and selecting the correct wording, phrazor.io lets
 					you format your content with one click, freeing up man-hours for other important work.
 				</p>
 			</div>
 			<div
-				class="flex flex-col w-1/5 gap-8 items-center rounded-lg bg-[rgba(255,_255,_255,_0.08)] p-3 pb-10"
+				class="flex flex-col w-1/5 gap-8 items-center rounded-lg bg-[rgba(255,_255,_255,_0.08)] md:w-1/6 p-3 pb-10"
 			>
 				<img
 					class="bg-opacity-20 w-full py-[20%] px-[40%] rounded-lg bg-[#F98011]"
@@ -268,9 +269,9 @@ export const prerender = true;
 					alt="Trend Up Icon"
 				/>
 				<h4 class="font-bold text-xl leading-normal">Grow your business</h4>
-				<p class="text-base leading-[1.4] text-[#6E6F6F]">
+				<p class="text-base md:text-sm leading-[1.4] text-[#6E6F6F]">
 					Whether your goal is to broaden your coverage, intensify your focus or expand to new
-					languages, we’ve got the perfect tools for you.
+					languages, we've got the perfect tools for you.
 				</p>
 			</div>
 		</div>
@@ -293,10 +294,10 @@ export const prerender = true;
 		alt="newsletter illustration"
 		class="absolute w-full h-full object-cover object-bottom z-0 pointer-events-nones"
 	/>
-	<h2 class="font-medium text-3xl md:text-[42px] md:w-1/2 relative z-10">
+	<h2 class="text-3xl md:text-4xl md:w-1/2 relative z-10 font-bold">
 		Signup for our newsletter
 	</h2>
-	<h3 class="md:w-2/5 px-10 text-lg md:p-0 leading-relaxed relative z-10">
+	<h3 class="md:w-2/5 px-10 text-lg md:text-base md:p-0 leading-relaxed relative z-10">
 		and receive a case study on how we helped a client grow from nearly zero daily exposures and
 		clicks to <span class="bg-black text-white rounded-full py-1 px-2 whitespace-nowrap"
 			>3K clicks</span
@@ -305,7 +306,7 @@ export const prerender = true;
 		<span class="bg-black text-white whitespace-nowrap rounded-full py-1 px-2">125K exposures.</span
 		>
 	</h3>
-	<div style="box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.06), 0px 44px 64px 0px rgba(0, 0, 0, 0.10);" class="relative w-full md:w-1/2">
+	<div style="box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.06), 0px 44px 64px 0px rgba(0, 0, 0, 0.10);" class="relative w-full md:w-2/5">
 		<input type="email" class="w-full py-6 px-4 rounded-[10px]" placeholder="Enter your email address" />
 		<button class="absolute right-1.5 bottom-1.5 rounded-[10px] p-4 border-2 border-black bg-black transition-colors hover:bg-transparent hover:text-black text-white get-started"
 			>Get started now</button
@@ -316,20 +317,20 @@ export const prerender = true;
 	class="text-white relative px-4 md:p-0 w-4/5 mx-auto md:w-3/5 md:gap-28 flex flex-col"
 	id="how-it-works"
 >
-	<div class="text-center flex flex-col py-16 px-4 md:p-0 md:w-1/2 md:py-32 md:mx-auto gap-20">
+	<div class="text-center flex flex-col py-16 px-4 md:p-0 md:w-1/2 md:py-32 md:mx-auto gap-10">
 		<h2 class="leading-normal text-3xl md:text-[42px] font-bold">How it works?</h2>
 		<h3 class="text-sm md:text-lg leading-normal opacity-60">
 			There are many variations of passages of Lorem Ipsum available, but the majority have
 		</h3>
 	</div>
-	<div class="flex flex-col items-center md:flex-row w-full md:justify-between">
-		<img class="w-1/2 md:w-1/3" alt="Step 1" src="/assets/illustrations/step-1.svg" />
+	<div class="flex flex-col items-center md:flex-row w-full md:justify-around">
+		<img class="w-1/2 md:w-1/4" alt="Step 1" src="/assets/illustrations/step-1.svg" />
 		<div
 			class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
 		>
 			<div class="enumerator">1</div>
-			<h4 class="text-3xl font-medium md:text-[42px]">Define your needs</h4>
-			<p class="text-sm leading-normal md:text-lg opacity-60">
+			<h4 class="text-3xl font-medium md:text-3xl">Define your needs</h4>
+			<p class="text-sm leading-normal opacity-60">
 				Before creating a customized framework the first prerequisite is to define the scope down to
 				detail. This is typically a back-and-forth process with our scope definition-template as a
 				starting point. This phase ensures that the framework will deliver a tailored output to the
@@ -337,14 +338,14 @@ export const prerender = true;
 			</p>
 		</div>
 	</div>
-	<div class="flex flex-col items-center md:flex-row w-full md:justify-between">
-		<img class="w-1/2 md:w-1/3 order-2" alt="Step 2" src="/assets/illustrations/step-2.svg" />
+	<div class="flex flex-col items-center md:flex-row w-full md:justify-around">
+		<img class="w-1/2 md:w-1/4 order-2" alt="Step 2" src="/assets/illustrations/step-2.svg" />
 		<div
 			class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
 		>
 			<div class="enumerator">2</div>
-			<h4 class="text-3xl font-medium md:text-[42px]">Framework under construction</h4>
-			<p class="text-sm leading-normal md:text-lg opacity-60">
+			<h4 class="text-3xl font-medium md:text-3xl">Framework under construction</h4>
+			<p class="text-sm leading-normal opacity-60">
 				When the scope is determined, the framework is ready to be built. This process is taken care
 				of by the phrazor.io-team who have many years of experience creating custom generative AI
 				solutions. A thorough quality test will also be conducted using our structured approach to
@@ -352,21 +353,21 @@ export const prerender = true;
 			</p>
 		</div>
 	</div>
-	<div class="flex flex-col items-center md:flex-row w-full md:justify-between">
-		<img class="w-1/2 md:w-1/3" alt="Step 3" src="/assets/illustrations/step-3.svg" />
+	<div class="flex flex-col items-center md:flex-row w-full md:justify-around">
+		<img class="w-1/2 md:w-1/4" alt="Step 3" src="/assets/illustrations/step-3.svg" />
 		<div
 			class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
 		>
 			<div class="enumerator">3</div>
-			<h4 class="text-3xl font-medium md:text-[42px]">Start generating &#x1F680;</h4>
-			<p class="text-sm leading-normal md:text-lg opacity-60">
+			<h4 class="text-3xl font-medium md:text-3xl">Start generating &#x1F680;</h4>
+			<p class="text-sm leading-normal opacity-60">
 				When the framework is ready, it will be added to the web platform such that your team can
 				start generating content.
 			</p>
 		</div>
 	</div>
-	<div class="absolute hidden md:block -z-10" id="shape-7" />
-	<div class="absolute hidden md:block -z-10" id="shape-8" />
+	<div class="absolute hidden md:block -z-10" id="shape-77" />
+	<div class="absolute hidden md:block -z-10" id="shape-88" />
 	<div class="absolute hidden md:block -z-10" id="shape-9" />
 	<div class="absolute hidden md:block -z-10" id="shape-10" />
 	<div class="absolute hidden md:block -z-10" id="shape-11" />
@@ -375,17 +376,17 @@ export const prerender = true;
 	<img class="absolute hidden md:block -z-10" src="/assets/illustrations/dotted-line-2.svg" id="shape-14" />
 </section>
 <section
-	class="relative h-min md:p-20 flex flex-col md:flex-row md:items-center md:justify-between py-20"
+	class="relative h-min md:p-40 flex flex-col md:flex-row md:items-center md:justify-between py-20"
 >
 	<div
 		class="flex flex-col gap-10 md:w-1/2 md:h-full md:justify-center text-center md:text-start px-4 md:p-0 pt-4"
 	>
 		<div class="flex flex-col gap-4">
-			<h3 class="text-sm leading-normal text-[#13B6EC] md:text-lg">
+			<h3 class="text-sm leading-normal text-[#13B6EC] md:text-base">
 				Customized content in an instant
 			</h3>
-			<h2 class="text-[42px] text-3xl">Any questions?</h2>
-			<p class="text-sm leading-normal text-[#A0A0A0] md:text-lg">
+			<h2 class="md:text-4xl text-3xl">Any questions?</h2>
+			<p class="text-sm leading-normal text-[#A0A0A0] md:text-base">
 				You ask. We tell. We have compiled the answers to some of the most asked questions. Should
 				you need more information, do not hesitate to <a class="underline text-[#13B6EC]" href="#"
 					>contact us</a
@@ -397,20 +398,20 @@ export const prerender = true;
 				>
 			</p>
 		</div>
-		<div class="text-white hidden md:flex flex-col">
-			<h4 class="text-3xl leading-normal check">The application</h4>
+		<div class="text-white hidden md:flex flex-col gap-2">
+			<h4 class="text-3xl md:text-2xl leading-normal check">The application</h4>
 			<p class="text-lg leading-normal opacity-60">
 				phrazor.io is accessible from computer, tablet and phone.
 			</p>
 		</div>
-		<div class="text-white hidden md:flex flex-col">
-			<h4 class="text-3xl leading-normal check">The application</h4>
+		<div class="text-white hidden md:flex flex-col gap-2">
+			<h4 class="text-3xl md:text-2xl leading-normal check">The application</h4>
 			<p class="text-lg leading-normal opacity-60">
 				phrazor.io is accessible from computer, tablet and phone.
 			</p>
 		</div>
 	</div>
-	<div class="p-8 md:w-3/5">
+	<div class="p-8 md:w-2/5">
 		<div class="rounded-xl bg-[#292929]">
 			<div class="border-b-2 p-3 md:px-8 border-[#474747] rounded-t-xl">
 				<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
@@ -496,7 +497,7 @@ export const prerender = true;
 	id="end-contact"
 >
 	<div class="w-full md:w-1/3 flex flex-col gap-6">
-		<img src="/assets/illustrations/logo.svg" alt="logo" class="w-1/2 object-cover" />
+		<img src="/assets/illustrations/logo-white.svg" alt="logo" class="w-1/2 h-auto" style="" />
 		<p class="leading-relaxed text-sm md:text-base text-[#A1A1AA] mb-2">
 			The one-stop AI-powered platform to effortlessly generate unique, reliable content and save
 			time, reach new audiences, and grow your business.
@@ -611,25 +612,25 @@ export const prerender = true;
 	<img
 		alt=""
 		src="/assets/illustrations/shape-3.svg"
-		class="hidden md:block absolute pointer-events-none"
+		class="hidden md:block absolute pointer-events-none -z-10"
 		id="shape-3"
 	/>
 	<img
 		alt=""
 		src="/assets/illustrations/shape-4.svg"
-		class="hidden md:block absolute pointer-events-none"
+		class="hidden md:block absolute pointer-events-none -z-10"
 		id="shape-4"
 	/>
 	<img
 		alt=""
 		src="/assets/illustrations/shape-5.svg"
-		class="block md:hidden absolute pointer-events-none"
+		class="block md:hidden absolute pointer-events-none -z-10"
 		id="shape-5"
 	/>
 	<img
 		alt=""
 		src="/assets/illustrations/shape-6.svg"
-		class="block md:hidden absolute pointer-events-none bottom-0 right-0"
+		class="block md:hidden absolute pointer-events-none -z-10 bottom-0 right-0"
 		id="shape-6"
 	/>
 	<div
@@ -710,14 +711,14 @@ export const prerender = true;
 		width: 800px;
 	}
 	#shape-7 {
-		width: 515px;
-		height: 515px;
+		width: 415px;
+		height: 565px;
 		flex-shrink: 0;
-		border-radius: 515px;
+		border-radius: 415px;
 		background: rgba(190, 169, 254, 0.60);
-		filter: blur(134.64569091796875px);
+		filter: blur(134.64px);
 		right: 221px;
-		bottom: 151px;
+		bottom: 201px;
 	}
 	#shape-8 {
 		width: 367px;
@@ -747,8 +748,8 @@ export const prerender = true;
 		width: 367px;
 		height: 366px;
 		flex-shrink: 0;
-		right: 507px;
-		bottom: 180px;
+		right: 200px;
+		bottom: -100px;
 	}
 	#shape-11 {
 		border-radius: 515px;
@@ -764,24 +765,24 @@ export const prerender = true;
 	#shape-12 {
 		width: 460.076px;
 		height: 460.076px;
-		right: 465px;
-		bottom: 324px;
+		right: 065px;
+		bottom: 524px;
 		border-radius: 460.076px;
 		opacity: 0.34;
 		background: rgba(88, 182, 248, 0.40);
 		filter: blur(90.70046997070312px);
 	}
 	#shape-13 {
-		width: 460px;
+		width: 340px;
 		height: 126px;
-		left: 0px;
-		top: 845px;
+		left: 76px;
+		top: 730px;
 	}
 	#shape-14 {
-		width: 478px;
+		width: 360px;
 		height: 126px;
-		left: 0px;
-		top: 1320px;
+		left: 66px;
+		top: 1090px;
 	}
 	.enumerator {
 		border-radius: 32px;
@@ -811,7 +812,7 @@ export const prerender = true;
 		display: inline-block;
 		position: relative;
 		top: 8px;
-		right: 8px;
+		right: 6px;
 	}
 	@media (min-width: 768px) {
 		.enumerator {
@@ -907,7 +908,7 @@ export const prerender = true;
 			header.animate(
 				[
 					{ backgroundColor: 'transparent' },
-					{ backgroundColor: 'black' }
+					{ backgroundColor: '#121212' }
 				],
 				{
 					duration: 200,
@@ -918,7 +919,7 @@ export const prerender = true;
 		} else if (window.scrollY === 0 && scrolled) {
 			header.animate(
 				[
-					{ backgroundColor: 'black' },
+					{ backgroundColor: '#121212' },
 					{ backgroundColor: 'transparent' }
 				],
 				{
