@@ -834,7 +834,7 @@ export const prerender = true;
 	let scrolled = false;
 	let prodMdState: "hidden" | "visible" = "hidden";
 	const nav = document.querySelector('nav#mb');
-	const toggleEl = document.querySelector('header > button');
+	const toggleEl = document.querySelector('header > div > button');
 	const prodToggleEl = document.getElementById("products-toggle");
 	const header = document.querySelector('header');
 	const prodToggleMdEl = document.getElementById("products-toggle-md");
@@ -1005,10 +1005,12 @@ export const prerender = true;
 			}
 		});
 	}
-	const {x} = c.firstElementChild.getBoundingClientRect();
-	const widthContent = c.lastElementChild.getBoundingClientRect().x - x;
-	const half = (window.innerWidth - widthContent) / 2;
-	// set header padding to screen width - width of container
-	header.style.padding = `0 ${half}px`;
+	const {x, width} = c.firstElementChild.getBoundingClientRect();
+	const widthContent = c.lastElementChild.getBoundingClientRect().x - x + width;
+	if(window.matchMedia("(min-width: 768px)").matches) {
+		header.firstElementChild.style.width = widthContent + "px";
+	} else {
+		header?.classList.add("w-full");
+	}
 	header.classList.remove("!invisible");
 </script>

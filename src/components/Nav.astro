@@ -1,64 +1,66 @@
 <header
-	class="flex sticky w-screen top-0 left-0 z-50 h-20 items-center md:px-36 px-8 justify-between border-[#1D1D1D] !invisible"
+	class="flex justify-center sticky w-screen top-0 left-0 z-50 h-20 md:px-0 px-8 border-[#1D1D1D] !invisible"
 >
-	<img src="/assets/illustrations/logo-white.svg" alt="logo" class="h-6 w-auto" />
-	<button class="flex flex-col justify-around h-6 w-6 md:hidden">
-		<div class="h-0.5 w-full rounded-full bg-[#84818A]" />
-		<div class="h-0.5 w-full rounded-full bg-[#84818A]" />
-	</button>
-	<nav id="md" class="gap-6 items-center hidden md:flex">
-		<button id="products" class="relative hidden group group-hover:text-[#13B6EC]"
-			><div id="products-toggle-md" class="cursor-pointer flex items-center gap-2">
-				Products <svg class="w-2" xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6" fill="none">
-					<path d="M7.33334 1.11333C7.20843 0.989158 7.03946 0.919464 6.86334 0.919464C6.68722 0.919464 6.51825 0.989158 6.39334 1.11333L4.00001 3.47333L1.64001 1.11333C1.5151 0.989158 1.34613 0.919464 1.17001 0.919464C0.993883 0.919464 0.824915 0.989158 0.700006 1.11333C0.637521 1.1753 0.587925 1.24904 0.554079 1.33027C0.520233 1.41151 0.502808 1.49865 0.502808 1.58666C0.502808 1.67467 0.520233 1.7618 0.554079 1.84304C0.587925 1.92428 0.637521 1.99802 0.700006 2.05999L3.52667 4.88666C3.58865 4.94914 3.66238 4.99874 3.74362 5.03259C3.82486 5.06643 3.912 5.08386 4.00001 5.08386C4.08801 5.08386 4.17515 5.06643 4.25639 5.03259C4.33763 4.99874 4.41136 4.94914 4.47334 4.88666L7.33334 2.05999C7.39582 1.99802 7.44542 1.92428 7.47927 1.84304C7.51311 1.7618 7.53054 1.67467 7.53054 1.58666C7.53054 1.49865 7.51311 1.41151 7.47927 1.33027C7.44542 1.24904 7.39582 1.1753 7.33334 1.11333Z" fill="white" />
-					</svg>
-			</div>
-			<div
-				class="opacity-0 -translate-y-2.5 bg-black z-50 p-4 rounded absolute flex flex-col top-full mt-10 w-40"
+	<div class="flex justify-between items-center">
+		<img src="/assets/illustrations/logo-white.svg" alt="logo" class="h-6 w-auto" />
+		<button class="flex flex-col justify-around h-6 w-6 md:hidden">
+			<div class="h-0.5 w-full rounded-full bg-[#84818A]" />
+			<div class="h-0.5 w-full rounded-full bg-[#84818A]" />
+		</button>
+		<nav id="md" class="gap-6 items-center hidden md:flex">
+			<button id="products" class="relative hidden group group-hover:text-[#13B6EC]"
+				><div id="products-toggle-md" class="cursor-pointer flex items-center gap-2">
+					Products <svg class="w-2" xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6" fill="none">
+						<path d="M7.33334 1.11333C7.20843 0.989158 7.03946 0.919464 6.86334 0.919464C6.68722 0.919464 6.51825 0.989158 6.39334 1.11333L4.00001 3.47333L1.64001 1.11333C1.5151 0.989158 1.34613 0.919464 1.17001 0.919464C0.993883 0.919464 0.824915 0.989158 0.700006 1.11333C0.637521 1.1753 0.587925 1.24904 0.554079 1.33027C0.520233 1.41151 0.502808 1.49865 0.502808 1.58666C0.502808 1.67467 0.520233 1.7618 0.554079 1.84304C0.587925 1.92428 0.637521 1.99802 0.700006 2.05999L3.52667 4.88666C3.58865 4.94914 3.66238 4.99874 3.74362 5.03259C3.82486 5.06643 3.912 5.08386 4.00001 5.08386C4.08801 5.08386 4.17515 5.06643 4.25639 5.03259C4.33763 4.99874 4.41136 4.94914 4.47334 4.88666L7.33334 2.05999C7.39582 1.99802 7.44542 1.92428 7.47927 1.84304C7.51311 1.7618 7.53054 1.67467 7.53054 1.58666C7.53054 1.49865 7.51311 1.41151 7.47927 1.33027C7.44542 1.24904 7.39582 1.1753 7.33334 1.11333Z" fill="white" />
+						</svg>
+				</div>
+				<div
+					class="opacity-0 -translate-y-2.5 bg-black z-50 p-4 rounded absolute flex flex-col top-full mt-10 w-40"
+				>
+					<a
+						class="hover:bg-[rgba(0,_192,_255,_0.10)] text-start w-full rounded px-2 py-4 whitespace-nowrap hover:text-[#00C0FF]"
+						href="#">Menu item 1</a
+					>
+					<a
+						class="hover:bg-[rgba(0,_192,_255,_0.10)] text-start w-full rounded px-2 py-4 whitespace-nowrap hover:text-[#00C0FF]"
+						href="#">Menu item 2</a
+					>
+					<a
+						class="hover:bg-[rgba(0,_192,_255,_0.10)] text-start w-full rounded px-2 py-4 px-10 whitespace-nowrap hover:text-[#00C0FF]"
+						href="#">Menu item 3</a
+					>
+				</div>
+			</button>
+			<a class="hidden hover:text-[#13B6EC] transition-colors" href="#">Platform</a>
+			<a class="hidden hover:text-[#13B6EC] transition-colors" href="#">Blog</a>
+			<a href="https://calendly.com/phrazor/phrazor-oi-introductory-meeting" class="btn w-32 primary"
+				>Get a demo</a
 			>
-				<a
-					class="hover:bg-[rgba(0,_192,_255,_0.10)] text-start w-full rounded px-2 py-4 whitespace-nowrap hover:text-[#00C0FF]"
-					href="#">Menu item 1</a
-				>
-				<a
-					class="hover:bg-[rgba(0,_192,_255,_0.10)] text-start w-full rounded px-2 py-4 whitespace-nowrap hover:text-[#00C0FF]"
-					href="#">Menu item 2</a
-				>
-				<a
-					class="hover:bg-[rgba(0,_192,_255,_0.10)] text-start w-full rounded px-2 py-4 px-10 whitespace-nowrap hover:text-[#00C0FF]"
-					href="#">Menu item 3</a
-				>
-			</div>
-		</button>
-		<a class="hidden hover:text-[#13B6EC] transition-colors" href="#">Platform</a>
-		<a class="hidden hover:text-[#13B6EC] transition-colors" href="#">Blog</a>
-		<a href="https://calendly.com/phrazor/phrazor-oi-introductory-meeting" class="btn w-32 primary"
-			>Get a demo</a
+			<button class="btn secondary w-32">Login</button>
+		</nav>
+		<nav
+			id="mb"
+			style="display: none;"
+			class="absolute top-20 p-4 w-screen h-[calc(100vh-5rem)] left-0 z-50 bg-[#121212] flex-col gap-4 md:hidden items-center"
 		>
-		<button class="btn secondary w-32">Login</button>
-	</nav>
-	<nav
-		id="mb"
-		style="display: none;"
-		class="absolute top-20 p-4 w-screen h-[calc(100vh-5rem)] left-0 z-50 bg-[#121212] flex-col gap-4 md:hidden items-center"
-	>
-		<button
-			class="hidden flex-col h-16 overflow-hidden justify-start items-center bg-[rgba(255,_255,_255,_0.10)] rounded w-full"
-			><div id="products-toggle" class="cursor-pointer flex items-center gap-2 min-h-[4rem]">
-				Products<img src="/assets/icons/arrow.svg" alt="arrow" class="w-2" />
-			</div>
-			<div class="flex flex-col items-center gap-8 py-10">
-				<a href="#">Menu item 1</a>
-				<a href="#">Menu item 3</a>
-				<a class="" href="#">Menu item 2</a>
-			</div>
-		</button>
-		<a class="hidden" href="#">Platform</a>
-		<a class="hidden" href="#">Blog</a>
-		<a
-			href="https://calendly.com/phrazor/phrazor-oi-introductory-meeting"
-			class="btn !aspect-[4/1] !text-lg w-full primary">Get a demo</a
-		>
-		<button class="btn !aspect-[4/1] !text-lg w-full secondary">Login</button>
-	</nav>
+			<button
+				class="hidden flex-col h-16 overflow-hidden justify-start items-center bg-[rgba(255,_255,_255,_0.10)] rounded w-full"
+				><div id="products-toggle" class="cursor-pointer flex items-center gap-2 min-h-[4rem]">
+					Products<img src="/assets/icons/arrow.svg" alt="arrow" class="w-2" />
+				</div>
+				<div class="flex flex-col items-center gap-8 py-10">
+					<a href="#">Menu item 1</a>
+					<a href="#">Menu item 3</a>
+					<a class="" href="#">Menu item 2</a>
+				</div>
+			</button>
+			<a class="hidden" href="#">Platform</a>
+			<a class="hidden" href="#">Blog</a>
+			<a
+				href="https://calendly.com/phrazor/phrazor-oi-introductory-meeting"
+				class="btn !aspect-[4/1] !text-lg w-full primary">Get a demo</a
+			>
+			<button class="btn !aspect-[4/1] !text-lg w-full secondary">Login</button>
+		</nav>
+	</div>
 </header>
