@@ -23,7 +23,7 @@ export const prerender = true;
 		});
 	});
 </script>
-<section id="atf" class="relative w-screen pt-20 md:flex md:pl-20">	
+<section id="atf" class="relative w-screen pt-20 md:flex">	
 	<img src="/assets/illustrations/grid.svg" alt="hero illustration" class="-z-20 absolute hidden md:block w-full h-screen left-0 top-0" />
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ export const prerender = true;
 			</filter>
 		</defs>
 	</svg>
-	<div class="flex flex-col items-center md:items-start text-center md:text-start gap-4 px-4">
+	<div class="flex flex-col md:w-1/2 items-center md:items-start md:pt-10 text-center md:text-start gap-4 px-4 md:px-0">
 		<h1 class="font-bold text-2xl md:text-5xl">
 			<span class="gradient-heading">Customized</span> content in an <br> instant
 		</h1>
@@ -128,7 +128,7 @@ export const prerender = true;
 			</p>
 		</div>
 	</div>
-	<div id="head" class="w-full mt-10 md:mt-0 md:w-2/3 relative pointer-events-none">
+	<div id="head" class="w-full mt-10 md:mt-0 md:w-1/2 relative pointer-events-none">
 		<picture>
 			<source media="(min-width: 768px)" srcset="/assets/illustrations/framework-ill.png" />
 			<source media="(max-width: 767px)" srcset="/assets/illustrations/framework-mobile-ill.png" />
@@ -204,7 +204,7 @@ export const prerender = true;
 		</span>
 	</p>
 </section>
-<div class="w-4/5 border-b-[1px] border-white opacity-10 mx-auto mt-10" />
+<div class="w-4/5 border-b-[1px] border-white opacity-10 mx-auto usp-width mt-10" />
 <section class="flex flex-col w-screen items-center overflow-x-clip px-8 mt-20" id="why-phrazor">
 	<h3 class="text-[#13B6EC] text-sm md:text-base font-medium text-center md:mb-2">Why Phrazor.io</h3>
 	<h2 class="text-3xl md:text-3xl font-bold leading-tight text-center mb-3">
@@ -314,57 +314,61 @@ export const prerender = true;
 	</div>
 </section>
 <section
-	class="text-white relative px-4 md:p-0 w-4/5 mx-auto md:w-3/5 md:gap-28 flex flex-col"
+	class="text-white relative px-4 md:p-0 w-4/5 md:w-screen"
 	id="how-it-works"
 >
-	<div class="text-center flex flex-col py-16 px-4 md:p-0 md:w-1/2 md:py-32 md:mx-auto gap-10">
-		<h2 class="leading-normal text-3xl md:text-[42px] font-bold">How it works?</h2>
-		<h3 class="text-sm md:text-lg leading-normal opacity-60">
-			There are many variations of passages of Lorem Ipsum available, but the majority have
-		</h3>
-	</div>
-	<div class="flex flex-col items-center md:flex-row w-full md:justify-around">
-		<img class="w-1/2 md:w-1/4" alt="Step 1" src="/assets/illustrations/step-1.svg" />
-		<div
-			class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
-		>
-			<div class="enumerator">1</div>
-			<h4 class="text-3xl font-medium md:text-3xl">Define your needs</h4>
-			<p class="text-sm leading-normal opacity-60">
-				Before creating a customized framework the first prerequisite is to define the scope down to
-				detail. This is typically a back-and-forth process with our scope definition-template as a
-				starting point. This phase ensures that the framework will deliver a tailored output to the
-				specific use case.
-			</p>
+	<div class="md:gap-28 flex flex-col usp-width mx-auto relative">
+		<div class="text-center flex flex-col py-16 px-4 md:p-0 md:w-1/2 md:py-32 md:mx-auto gap-10">
+			<h2 class="leading-normal text-3xl md:text-[42px] font-bold">How it works?</h2>
+			<h3 class="text-sm md:text-lg leading-normal opacity-60">
+				There are many variations of passages of Lorem Ipsum available, but the majority have
+			</h3>
 		</div>
-	</div>
-	<div class="flex flex-col items-center md:flex-row w-full md:justify-around">
-		<img class="w-1/2 md:w-1/4 order-2" alt="Step 2" src="/assets/illustrations/step-2.svg" />
-		<div
-			class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
-		>
-			<div class="enumerator">2</div>
-			<h4 class="text-3xl font-medium md:text-3xl">Framework under construction</h4>
-			<p class="text-sm leading-normal opacity-60">
-				When the scope is determined, the framework is ready to be built. This process is taken care
-				of by the phrazor.io-team who have many years of experience creating custom generative AI
-				solutions. A thorough quality test will also be conducted using our structured approach to
-				ensure that the framework always delivers reliable and bug free output.
-			</p>
+		<div class="flex flex-col items-center md:flex-row w-full md:justify-between">
+			<img class="w-1/2 md:w-1/4" alt="Step 1" src="/assets/illustrations/step-1.svg" />
+			<div
+				class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
+			>
+				<div class="enumerator">1</div>
+				<h4 class="text-3xl font-medium md:text-3xl">Define your needs</h4>
+				<p class="text-sm leading-normal opacity-60">
+					Before creating a customized framework the first prerequisite is to define the scope down to
+					detail. This is typically a back-and-forth process with our scope definition-template as a
+					starting point. This phase ensures that the framework will deliver a tailored output to the
+					specific use case.
+				</p>
+			</div>
 		</div>
-	</div>
-	<div class="flex flex-col items-center md:flex-row w-full md:justify-around">
-		<img class="w-1/2 md:w-1/4" alt="Step 3" src="/assets/illustrations/step-3.svg" />
-		<div
-			class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
-		>
-			<div class="enumerator">3</div>
-			<h4 class="text-3xl font-medium md:text-3xl">Start generating &#x1F680;</h4>
-			<p class="text-sm leading-normal opacity-60">
-				When the framework is ready, it will be added to the web platform such that your team can
-				start generating content.
-			</p>
+		<div class="flex flex-col items-center md:flex-row w-full md:justify-between">
+			<img class="w-1/2 md:w-1/4 order-2" alt="Step 2" src="/assets/illustrations/step-2.svg" />
+			<div
+				class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
+			>
+				<div class="enumerator">2</div>
+				<h4 class="text-3xl font-medium md:text-3xl">Framework under construction</h4>
+				<p class="text-sm leading-normal opacity-60">
+					When the scope is determined, the framework is ready to be built. This process is taken care
+					of by the phrazor.io-team who have many years of experience creating custom generative AI
+					solutions. A thorough quality test will also be conducted using our structured approach to
+					ensure that the framework always delivers reliable and bug free output.
+				</p>
+			</div>
 		</div>
+		<div class="flex flex-col items-center md:flex-row w-full md:justify-between">
+			<img class="w-1/2 md:w-1/4" alt="Step 3" src="/assets/illustrations/step-3.svg" />
+			<div
+				class="flex flex-col items-center md:items-start text-center md:text-start gap-2 md:w-1/2 md:gap-4"
+			>
+				<div class="enumerator">3</div>
+				<h4 class="text-3xl font-medium md:text-3xl">Start generating &#x1F680;</h4>
+				<p class="text-sm leading-normal opacity-60">
+					When the framework is ready, it will be added to the web platform such that your team can
+					start generating content.
+				</p>
+			</div>
+		</div>
+		<img class="absolute hidden md:block -z-10 lines" src="/assets/illustrations/dotted-line.svg" id="shape-13" />
+		<img class="absolute hidden md:block -z-10 lines" src="/assets/illustrations/dotted-line-2.svg" id="shape-14" />
 	</div>
 	<div class="absolute hidden md:block -z-10" id="shape-77" />
 	<div class="absolute hidden md:block -z-10" id="shape-88" />
@@ -372,116 +376,116 @@ export const prerender = true;
 	<div class="absolute hidden md:block -z-10" id="shape-10" />
 	<div class="absolute hidden md:block -z-10" id="shape-11" />
 	<div class="absolute hidden md:block -z-10" id="shape-12" />
-	<img class="absolute hidden md:block -z-10" src="/assets/illustrations/dotted-line.svg" id="shape-13" />
-	<img class="absolute hidden md:block -z-10" src="/assets/illustrations/dotted-line-2.svg" id="shape-14" />
 </section>
 <section
-	class="relative h-min md:p-40 flex flex-col md:flex-row md:items-center md:justify-between py-20"
+	class="relative h-min flex justify-center py-20"
 >
-	<div
-		class="flex flex-col gap-10 md:w-1/2 md:h-full md:justify-center text-center md:text-start px-4 md:p-0 pt-4"
-	>
-		<div class="flex flex-col gap-4">
-			<h3 class="text-sm leading-normal text-[#13B6EC] md:text-base">
-				Customized content in an instant
-			</h3>
-			<h2 class="md:text-4xl text-3xl">Any questions?</h2>
-			<p class="text-sm leading-normal text-[#A0A0A0] md:text-base">
-				You ask. We tell. We have compiled the answers to some of the most asked questions. Should
-				you need more information, do not hesitate to <a class="underline text-[#13B6EC]" href="#"
-					>contact us</a
-				>
-				or
-				<a
-					class="underline text-[#13B6EC]"
-					href="https://calendly.com/phrazor/phrazor-oi-introductory-meeting">book a demo.</a
-				>
-			</p>
+	<div class="usp-width flex flex-col md:flex-row md:items-center md:justify-between">
+		<div
+			class="flex flex-col gap-10 md:w-1/2 md:h-full md:justify-center text-center md:text-start px-4 md:p-0 pt-4"
+		>
+			<div class="flex flex-col gap-4">
+				<h3 class="text-sm leading-normal text-[#13B6EC] md:text-base">
+					Customized content in an instant
+				</h3>
+				<h2 class="md:text-4xl text-3xl">Any questions?</h2>
+				<p class="text-sm leading-normal text-[#A0A0A0] md:text-base">
+					You ask. We tell. We have compiled the answers to some of the most asked questions. Should
+					you need more information, do not hesitate to <a class="underline text-[#13B6EC]" href="#"
+						>contact us</a
+					>
+					or
+					<a
+						class="underline text-[#13B6EC]"
+						href="https://calendly.com/phrazor/phrazor-oi-introductory-meeting">book a demo.</a
+					>
+				</p>
+			</div>
+			<div class="text-white hidden md:flex flex-col gap-2">
+				<h4 class="text-3xl md:text-2xl leading-normal check">The application</h4>
+				<p class="text-lg leading-normal opacity-60">
+					phrazor.io is accessible from computer, tablet and phone.
+				</p>
+			</div>
+			<div class="text-white hidden md:flex flex-col gap-2">
+				<h4 class="text-3xl md:text-2xl leading-normal check">The application</h4>
+				<p class="text-lg leading-normal opacity-60">
+					phrazor.io is accessible from computer, tablet and phone.
+				</p>
+			</div>
 		</div>
-		<div class="text-white hidden md:flex flex-col gap-2">
-			<h4 class="text-3xl md:text-2xl leading-normal check">The application</h4>
-			<p class="text-lg leading-normal opacity-60">
-				phrazor.io is accessible from computer, tablet and phone.
-			</p>
+		<div class="p-8 md:pr-0 md:w-2/5">
+			<div class="rounded-xl bg-[#292929]">
+				<div class="border-b-2 p-3 md:px-8 border-[#474747] rounded-t-xl">
+					<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
+						<h2 class="text-lg font-semibold">How does the Phrazer.io application work?</h2>
+						<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
+					</div>
+					<div class="hidden p-4 accordion-content">
+						<p class="opacity-60 leading-normal md:text-base">
+							The core functionality of Phrazor.io is based on a feature we have named 'frameworks'. A
+							given framework is created for a specific use case and is unique. The framework is
+							defined by a structure which dictates what kind of content it can produce and how it
+							will be presented. Once a framework is made, the structure can receive input, get
+							enriched by our data repository, and AI models to create a customized output in seconds,
+							again and again.
+						</p>
+					</div>
+				</div>
+				<div class="border-b-2 p-3 md:px-8 border-[#474747]">
+					<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
+						<h2 class="text-lg font-semibold">Can I try the Phrazor.io application?</h2>
+						<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
+					</div>
+					<div class="hidden p-4 accordion-content">
+						<p class="opacity-60 leading-normal md:text-base">
+							Yes, you can. Book a demo or send us a message, then we will set you up with a trial
+							user for free where you can try out a test framework to get an impression of the
+							functionalities.
+						</p>
+					</div>
+				</div>
+				<div class="border-b-2 p-3 md:px-8 border-[#474747]">
+					<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
+						<h2 class="text-lg font-semibold">What does the Phrazor.io application cost?</h2>
+						<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
+					</div>
+					<div class="hidden p-4 accordion-content">
+						<p class="opacity-60 leading-normal md:text-base">
+							We offer many different solutions based on need and scope. Book a meeting with us today
+							then we will try to give an estimate.
+						</p>
+					</div>
+				</div>
+				<div class="border-b-2 p-3 md:px-8 border-[#474747]">
+					<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
+						<h2 class="text-lg font-semibold">Who uses the Phrazor.io application?</h2>
+						<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
+					</div>
+					<div class="hidden p-4 accordion-content">
+						<p class="opacity-60 leading-normal md:text-base">
+							The platform is used by many different professionals. However, most of our users are
+							organizations within sports, finance and other media.
+						</p>
+					</div>
+				</div>
+				<div class="rounded-b-xl p-3 md:px-8 border-[#474747]">
+					<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
+						<h2 class="text-lg font-semibold">Anything else?</h2>
+						<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
+					</div>
+					<div class="hidden p-4 accordion-content">
+						<p class="opacity-60 leading-normal md:text-base">
+							You can contact us by chat or email. You will always be met by a real person, who is
+							ready to answer your questions.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="text-white hidden md:flex flex-col gap-2">
-			<h4 class="text-3xl md:text-2xl leading-normal check">The application</h4>
-			<p class="text-lg leading-normal opacity-60">
-				phrazor.io is accessible from computer, tablet and phone.
-			</p>
-		</div>
+		<div class="absolute -z-10 hidden md:block" id="shape-7" />
+		<div class="absolute -z-10 hidden md:block" id="shape-8" />
 	</div>
-	<div class="p-8 md:w-2/5">
-		<div class="rounded-xl bg-[#292929]">
-			<div class="border-b-2 p-3 md:px-8 border-[#474747] rounded-t-xl">
-				<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
-					<h2 class="text-lg font-semibold">How does the Phrazer.io application work?</h2>
-					<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
-				</div>
-				<div class="hidden p-4 accordion-content">
-					<p class="opacity-60 leading-normal md:text-base">
-						The core functionality of Phrazor.io is based on a feature we have named 'frameworks'. A
-						given framework is created for a specific use case and is unique. The framework is
-						defined by a structure which dictates what kind of content it can produce and how it
-						will be presented. Once a framework is made, the structure can receive input, get
-						enriched by our data repository, and AI models to create a customized output in seconds,
-						again and again.
-					</p>
-				</div>
-			</div>
-			<div class="border-b-2 p-3 md:px-8 border-[#474747]">
-				<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
-					<h2 class="text-lg font-semibold">Can I try the Phrazor.io application?</h2>
-					<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
-				</div>
-				<div class="hidden p-4 accordion-content">
-					<p class="opacity-60 leading-normal md:text-base">
-						Yes, you can. Book a demo or send us a message, then we will set you up with a trial
-						user for free where you can try out a test framework to get an impression of the
-						functionalities.
-					</p>
-				</div>
-			</div>
-			<div class="border-b-2 p-3 md:px-8 border-[#474747]">
-				<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
-					<h2 class="text-lg font-semibold">What does the Phrazor.io application cost?</h2>
-					<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
-				</div>
-				<div class="hidden p-4 accordion-content">
-					<p class="opacity-60 leading-normal md:text-base">
-						We offer many different solutions based on need and scope. Book a meeting with us today
-						then we will try to give an estimate.
-					</p>
-				</div>
-			</div>
-			<div class="border-b-2 p-3 md:px-8 border-[#474747]">
-				<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
-					<h2 class="text-lg font-semibold">Who uses the Phrazor.io application?</h2>
-					<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
-				</div>
-				<div class="hidden p-4 accordion-content">
-					<p class="opacity-60 leading-normal md:text-base">
-						The platform is used by many different professionals. However, most of our users are
-						organizations within sports, finance and other media.
-					</p>
-				</div>
-			</div>
-			<div class="rounded-b-xl p-3 md:px-8 border-[#474747]">
-				<div class="flex justify-between items-center p-4 cursor-pointer accordion-header">
-					<h2 class="text-lg font-semibold">Anything else?</h2>
-					<img src="/assets/icons/accordion.svg" alt="" class="w-6 h-6 transform accordion-icon" />
-				</div>
-				<div class="hidden p-4 accordion-content">
-					<p class="opacity-60 leading-normal md:text-base">
-						You can contact us by chat or email. You will always be met by a real person, who is
-						ready to answer your questions.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="absolute -z-10 hidden md:block" id="shape-7" />
-	<div class="absolute -z-10 hidden md:block" id="shape-8" />
 </section>
 <section
 	id="grow"
@@ -493,160 +497,162 @@ export const prerender = true;
 	<p class="text-xs leading-normal md:text-sm">No ads. No trails. No commitments</p>
 </section>
 <footer
-	class="w-screen flex flex-col md:flex-row md:items-start pt-10 md:py-20 md:justify-between overflow-hidden relative md:h-[600px] h-[700px] bg-[#12141D] md:px-40 px-4"
+	class="w-screen flex pt-10 md:py-20 justify-center overflow-hidden md:h-[600px] h-[700px] bg-[#12141D] relative px-4"
 	id="end-contact"
 >
-	<div class="w-full md:w-1/3 flex flex-col gap-6">
-		<img src="/assets/illustrations/logo-white.svg" alt="logo" class="w-1/2 h-auto" style="" />
-		<p class="leading-relaxed text-sm md:text-base text-[#A1A1AA] mb-2">
-			The one-stop AI-powered platform to effortlessly generate unique, reliable content and save
-			time, reach new audiences, and grow your business.
-		</p>
-		<p class="font-semibold text-xs text-[#A1A1AA]" style="letter-spacing: 3px;">
-			SUBSCRIBE TO NEWSLETTER
-		</p>
-		<div class="relative w-full">
-			<input type="email" class="w-full py-4 px-4 rounded-[5px] text-[#71717A] bg-white bg-opacity-10" placeholder="Enter your email" />
-			<button class="absolute right-1.5 !py-3.5 !rounded-[4px] bottom-1.5 btn primary get-started">Subscribe</button>
-		</div>
-		<span class="flex gap-4">
-			<a id="twitter" href="#"
-				><svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="28"
-					height="28"
-					viewBox="0 0 28 28"
-					fill="none"
-				>
-					<circle cx="14" cy="14" r="14" fill="#3A3756" />
-					<path
-						d="M20.2066 10.9831C19.7876 11.1693 19.3453 11.2857 18.8797 11.3556C19.3453 11.0762 19.7178 10.6339 19.8807 10.0985C19.4384 10.3546 18.9496 10.5408 18.4142 10.6572C17.9951 10.2149 17.3899 9.93555 16.7381 9.93555C15.481 9.93555 14.4567 10.9598 14.4567 12.2169C14.4567 12.4031 14.48 12.5661 14.5266 12.729C12.641 12.6359 10.9416 11.728 9.80092 10.3313C9.61469 10.6805 9.4983 11.0529 9.4983 11.472C9.4983 12.2634 9.89404 12.9618 10.5226 13.3808C10.1501 13.3576 9.80092 13.2644 9.47502 13.1015V13.1248C9.47502 14.2422 10.2665 15.1733 11.3141 15.3828C11.1278 15.4294 10.9183 15.4527 10.7088 15.4527C10.5691 15.4527 10.4062 15.4294 10.2665 15.4061C10.5691 16.314 11.4072 16.9891 12.4082 16.9891C11.6167 17.5943 10.639 17.9668 9.56813 17.9668C9.3819 17.9668 9.19567 17.9668 9.03271 17.9435C10.057 18.5953 11.2442 18.9678 12.5478 18.9678C16.7613 18.9678 19.066 15.476 19.066 12.4497C19.066 12.3566 19.066 12.2402 19.066 12.1471C19.5083 11.8444 19.904 11.4487 20.2066 10.9831Z"
-						fill="white"
-					/>
-				</svg></a
-			>
-			<a id="facebook">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="28"
-					height="28"
-					viewBox="0 0 28 28"
-					fill="none"
-				>
-					<circle cx="14" cy="14" r="14" fill="#3A3756" />
-					<path
-						d="M12.7083 20.3038V14.7503H10.8394V12.5859H12.7083V10.9898C12.7083 9.13752 13.8396 8.12891 15.492 8.12891C16.2835 8.12891 16.9638 8.18784 17.162 8.21417V10.1499L16.016 10.1505C15.1174 10.1505 14.9434 10.5775 14.9434 11.2041V12.5859H17.0866L16.8075 14.7503H14.9434V20.3038H12.7083Z"
-						fill="white"
-					/>
-				</svg>
-			</a>
-			<a href="#" id="instagram">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="28"
-					height="28"
-					viewBox="0 0 28 28"
-					fill="none"
-				>
-					<circle cx="14" cy="14" r="14" fill="#3A3756" />
-					<path
-						d="M14.0003 8.44721C15.809 8.44721 16.0232 8.45398 16.7377 8.48656C17.1673 8.49182 17.5928 8.5707 17.9958 8.71979C18.288 8.83248 18.5533 9.00511 18.7748 9.22656C18.9962 9.44802 19.1689 9.71339 19.2816 10.0056C19.4306 10.4085 19.5095 10.8341 19.5148 11.2637C19.547 11.9782 19.5541 12.1924 19.5541 14.0011C19.5541 15.8098 19.5474 16.024 19.5148 16.7385C19.5095 17.1681 19.4306 17.5936 19.2816 17.9966C19.1689 18.2888 18.9962 18.5541 18.7748 18.7756C18.5533 18.997 18.288 19.1697 17.9958 19.2824C17.5928 19.4315 17.1673 19.5103 16.7377 19.5156C16.0235 19.5479 15.8093 19.5549 14.0003 19.5549C12.1912 19.5549 11.977 19.5482 11.2628 19.5156C10.8332 19.5103 10.4077 19.4315 10.0048 19.2824C9.71258 19.1697 9.44721 18.997 9.22575 18.7756C9.0043 18.5541 8.83167 18.2888 8.71898 17.9966C8.56989 17.5936 8.49101 17.1681 8.48575 16.7385C8.45349 16.024 8.4464 15.8098 8.4464 14.0011C8.4464 12.1924 8.45317 11.9782 8.48575 11.2637C8.49101 10.8341 8.56989 10.4085 8.71898 10.0056C8.83167 9.71339 9.0043 9.44802 9.22575 9.22656C9.44721 9.00511 9.71258 8.83248 10.0048 8.71979C10.4077 8.5707 10.8332 8.49182 11.2628 8.48656C11.9774 8.4543 12.1916 8.44721 14.0003 8.44721ZM14.0003 7.22656C12.1616 7.22656 11.9299 7.2343 11.2074 7.26721C10.6451 7.27839 10.0888 7.38485 9.5622 7.58205C9.11043 7.75226 8.70123 8.019 8.36317 8.36366C8.0182 8.70184 7.75123 9.11127 7.58091 9.56334C7.38371 10.09 7.27726 10.6463 7.26607 11.2085C7.23382 11.9304 7.22607 12.162 7.22607 14.0008C7.22607 15.8395 7.23382 16.0711 7.26672 16.7937C7.2779 17.3559 7.38436 17.9122 7.58156 18.4388C7.75169 18.8908 8.01844 19.3002 8.36317 19.6385C8.70142 19.9832 9.11084 20.25 9.56285 20.4201C10.0895 20.6173 10.6458 20.7238 11.208 20.7349C11.9306 20.7672 12.1612 20.7756 14.0009 20.7756C15.8406 20.7756 16.0712 20.7679 16.7938 20.7349C17.3561 20.7238 17.9123 20.6173 18.439 20.4201C18.8888 20.2457 19.2974 19.9794 19.6384 19.6381C19.9795 19.2968 20.2455 18.8882 20.4196 18.4382C20.6168 17.9115 20.7233 17.3553 20.7345 16.793C20.7667 16.0711 20.7745 15.8395 20.7745 14.0008C20.7745 12.162 20.7667 11.9304 20.7338 11.2079C20.7226 10.6456 20.6162 10.0893 20.419 9.56269C20.2488 9.11068 19.9821 8.70126 19.6374 8.36301C19.2991 8.01828 18.8897 7.75153 18.4377 7.5814C17.911 7.3842 17.3548 7.27775 16.7925 7.26656C16.0706 7.2343 15.839 7.22656 14.0003 7.22656Z"
-						fill="white"
-					/>
-					<path
-						d="M14.0007 10.5234C13.3127 10.5234 12.6401 10.7275 12.068 11.1097C11.4959 11.492 11.0501 12.0353 10.7868 12.6709C10.5235 13.3066 10.4546 14.006 10.5888 14.6808C10.723 15.3556 11.0544 15.9755 11.5409 16.462C12.0274 16.9485 12.6472 17.2798 13.322 17.414C13.9968 17.5482 14.6963 17.4794 15.3319 17.2161C15.9676 16.9528 16.5109 16.5069 16.8931 15.9348C17.2754 15.3627 17.4794 14.6902 17.4794 14.0021C17.4794 13.0795 17.1129 12.1947 16.4605 11.5423C15.8081 10.8899 14.9233 10.5234 14.0007 10.5234ZM14.0007 16.2602C13.5541 16.2602 13.1175 16.1278 12.7462 15.8797C12.3748 15.6315 12.0854 15.2789 11.9145 14.8663C11.7436 14.4537 11.6989 13.9996 11.786 13.5616C11.8731 13.1236 12.0882 12.7213 12.404 12.4055C12.7198 12.0897 13.1221 11.8746 13.5602 11.7875C13.9982 11.7003 14.4522 11.7451 14.8648 11.916C15.2774 12.0869 15.6301 12.3763 15.8782 12.7476C16.1263 13.119 16.2587 13.5555 16.2587 14.0021C16.2587 14.601 16.0208 15.1754 15.5974 15.5988C15.1739 16.0223 14.5996 16.2602 14.0007 16.2602Z"
-						fill="white"
-					/>
-					<path
-						d="M17.6166 11.1981C18.0656 11.1981 18.4295 10.8341 18.4295 10.3852C18.4295 9.93621 18.0656 9.57227 17.6166 9.57227C17.1677 9.57227 16.8037 9.93621 16.8037 10.3852C16.8037 10.8341 17.1677 11.1981 17.6166 11.1981Z"
-						fill="white"
-					/>
-				</svg>
-			</a>
-			<a id="linkedin" href="#">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="28"
-					height="28"
-					viewBox="0 0 28 28"
-					fill="none"
-				>
-					<circle cx="14" cy="14" r="14" fill="#3A3756" />
-					<g clip-path="url(#clip0_42_230)">
+	<div class="flex flex-col h-full md:flex-row md:items-start md:justify-between usp-width">
+		<div class="w-full md:w-1/3 flex flex-col gap-6">
+			<img src="/assets/illustrations/logo-white.svg" alt="logo" class="w-1/2 h-auto" style="" />
+			<p class="leading-relaxed text-sm md:text-base text-[#A1A1AA] mb-2">
+				The one-stop AI-powered platform to effortlessly generate unique, reliable content and save
+				time, reach new audiences, and grow your business.
+			</p>
+			<p class="font-semibold text-xs text-[#A1A1AA]" style="letter-spacing: 3px;">
+				SUBSCRIBE TO NEWSLETTER
+			</p>
+			<div class="relative w-full">
+				<input type="email" class="w-full py-4 px-4 rounded-[5px] text-[#71717A] bg-white bg-opacity-10" placeholder="Enter your email" />
+				<button class="absolute right-1.5 !py-3.5 !rounded-[4px] bottom-1.5 btn primary get-started">Subscribe</button>
+			</div>
+			<span class="flex gap-4">
+				<a id="twitter" href="#"
+					><svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="28"
+						height="28"
+						viewBox="0 0 28 28"
+						fill="none"
+					>
+						<circle cx="14" cy="14" r="14" fill="#3A3756" />
 						<path
-							d="M19.1142 8H8.88583C8.6509 8 8.42558 8.09333 8.25945 8.25945C8.09333 8.42558 8 8.6509 8 8.88583V19.1142C8 19.3491 8.09333 19.5744 8.25945 19.7405C8.42558 19.9067 8.6509 20 8.88583 20H19.1142C19.3491 20 19.5744 19.9067 19.7405 19.7405C19.9067 19.5744 20 19.3491 20 19.1142V8.88583C20 8.6509 19.9067 8.42558 19.7405 8.25945C19.5744 8.09333 19.3491 8 19.1142 8ZM11.5767 18.2225H9.7725V12.4917H11.5767V18.2225ZM10.6733 11.6975C10.4687 11.6963 10.269 11.6346 10.0994 11.52C9.92978 11.4055 9.79792 11.2433 9.72044 11.0538C9.64296 10.8644 9.62332 10.6563 9.66402 10.4557C9.70471 10.2552 9.8039 10.0711 9.94908 9.92689C10.0943 9.78264 10.2789 9.68463 10.4797 9.64523C10.6806 9.60583 10.8886 9.6268 11.0775 9.70549C11.2664 9.78419 11.4278 9.91708 11.5412 10.0874C11.6547 10.2577 11.7152 10.4578 11.715 10.6625C11.7169 10.7995 11.6913 10.9355 11.6395 11.0624C11.5878 11.1893 11.511 11.3045 11.4138 11.401C11.3166 11.4976 11.2009 11.5736 11.0737 11.6246C10.9465 11.6755 10.8103 11.7003 10.6733 11.6975ZM18.2267 18.2275H16.4233V15.0967C16.4233 14.1733 16.0308 13.8883 15.5242 13.8883C14.9892 13.8883 14.4642 14.2917 14.4642 15.12V18.2275H12.66V12.4958H14.395V13.29H14.4183C14.5925 12.9375 15.2025 12.335 16.1333 12.335C17.14 12.335 18.2275 12.9325 18.2275 14.6825L18.2267 18.2275Z"
+							d="M20.2066 10.9831C19.7876 11.1693 19.3453 11.2857 18.8797 11.3556C19.3453 11.0762 19.7178 10.6339 19.8807 10.0985C19.4384 10.3546 18.9496 10.5408 18.4142 10.6572C17.9951 10.2149 17.3899 9.93555 16.7381 9.93555C15.481 9.93555 14.4567 10.9598 14.4567 12.2169C14.4567 12.4031 14.48 12.5661 14.5266 12.729C12.641 12.6359 10.9416 11.728 9.80092 10.3313C9.61469 10.6805 9.4983 11.0529 9.4983 11.472C9.4983 12.2634 9.89404 12.9618 10.5226 13.3808C10.1501 13.3576 9.80092 13.2644 9.47502 13.1015V13.1248C9.47502 14.2422 10.2665 15.1733 11.3141 15.3828C11.1278 15.4294 10.9183 15.4527 10.7088 15.4527C10.5691 15.4527 10.4062 15.4294 10.2665 15.4061C10.5691 16.314 11.4072 16.9891 12.4082 16.9891C11.6167 17.5943 10.639 17.9668 9.56813 17.9668C9.3819 17.9668 9.19567 17.9668 9.03271 17.9435C10.057 18.5953 11.2442 18.9678 12.5478 18.9678C16.7613 18.9678 19.066 15.476 19.066 12.4497C19.066 12.3566 19.066 12.2402 19.066 12.1471C19.5083 11.8444 19.904 11.4487 20.2066 10.9831Z"
 							fill="white"
 						/>
-					</g>
-					<defs>
-						<clipPath id="clip0_42_230">
-							<rect width="12" height="12" fill="white" transform="translate(8 8)" />
-						</clipPath>
-					</defs>
-				</svg>
-			</a>
-		</span>
-	</div>
-	<div class="flex w-full md:w-2/5 justify-between mt-10">
-		<div class="flex-col gap-4 hidden">
-			<h3 class="font-bold mb-2">Product</h3>
-			<a href="/framework">Framework</a>
-			<a href="/framework">Placeholder 1</a>
-			<a href="/framework">Placeholder 2</a>
-			<a href="/framework">Placeholder 3</a>
+					</svg></a
+				>
+				<a id="facebook">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="28"
+						height="28"
+						viewBox="0 0 28 28"
+						fill="none"
+					>
+						<circle cx="14" cy="14" r="14" fill="#3A3756" />
+						<path
+							d="M12.7083 20.3038V14.7503H10.8394V12.5859H12.7083V10.9898C12.7083 9.13752 13.8396 8.12891 15.492 8.12891C16.2835 8.12891 16.9638 8.18784 17.162 8.21417V10.1499L16.016 10.1505C15.1174 10.1505 14.9434 10.5775 14.9434 11.2041V12.5859H17.0866L16.8075 14.7503H14.9434V20.3038H12.7083Z"
+							fill="white"
+						/>
+					</svg>
+				</a>
+				<a href="#" id="instagram">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="28"
+						height="28"
+						viewBox="0 0 28 28"
+						fill="none"
+					>
+						<circle cx="14" cy="14" r="14" fill="#3A3756" />
+						<path
+							d="M14.0003 8.44721C15.809 8.44721 16.0232 8.45398 16.7377 8.48656C17.1673 8.49182 17.5928 8.5707 17.9958 8.71979C18.288 8.83248 18.5533 9.00511 18.7748 9.22656C18.9962 9.44802 19.1689 9.71339 19.2816 10.0056C19.4306 10.4085 19.5095 10.8341 19.5148 11.2637C19.547 11.9782 19.5541 12.1924 19.5541 14.0011C19.5541 15.8098 19.5474 16.024 19.5148 16.7385C19.5095 17.1681 19.4306 17.5936 19.2816 17.9966C19.1689 18.2888 18.9962 18.5541 18.7748 18.7756C18.5533 18.997 18.288 19.1697 17.9958 19.2824C17.5928 19.4315 17.1673 19.5103 16.7377 19.5156C16.0235 19.5479 15.8093 19.5549 14.0003 19.5549C12.1912 19.5549 11.977 19.5482 11.2628 19.5156C10.8332 19.5103 10.4077 19.4315 10.0048 19.2824C9.71258 19.1697 9.44721 18.997 9.22575 18.7756C9.0043 18.5541 8.83167 18.2888 8.71898 17.9966C8.56989 17.5936 8.49101 17.1681 8.48575 16.7385C8.45349 16.024 8.4464 15.8098 8.4464 14.0011C8.4464 12.1924 8.45317 11.9782 8.48575 11.2637C8.49101 10.8341 8.56989 10.4085 8.71898 10.0056C8.83167 9.71339 9.0043 9.44802 9.22575 9.22656C9.44721 9.00511 9.71258 8.83248 10.0048 8.71979C10.4077 8.5707 10.8332 8.49182 11.2628 8.48656C11.9774 8.4543 12.1916 8.44721 14.0003 8.44721ZM14.0003 7.22656C12.1616 7.22656 11.9299 7.2343 11.2074 7.26721C10.6451 7.27839 10.0888 7.38485 9.5622 7.58205C9.11043 7.75226 8.70123 8.019 8.36317 8.36366C8.0182 8.70184 7.75123 9.11127 7.58091 9.56334C7.38371 10.09 7.27726 10.6463 7.26607 11.2085C7.23382 11.9304 7.22607 12.162 7.22607 14.0008C7.22607 15.8395 7.23382 16.0711 7.26672 16.7937C7.2779 17.3559 7.38436 17.9122 7.58156 18.4388C7.75169 18.8908 8.01844 19.3002 8.36317 19.6385C8.70142 19.9832 9.11084 20.25 9.56285 20.4201C10.0895 20.6173 10.6458 20.7238 11.208 20.7349C11.9306 20.7672 12.1612 20.7756 14.0009 20.7756C15.8406 20.7756 16.0712 20.7679 16.7938 20.7349C17.3561 20.7238 17.9123 20.6173 18.439 20.4201C18.8888 20.2457 19.2974 19.9794 19.6384 19.6381C19.9795 19.2968 20.2455 18.8882 20.4196 18.4382C20.6168 17.9115 20.7233 17.3553 20.7345 16.793C20.7667 16.0711 20.7745 15.8395 20.7745 14.0008C20.7745 12.162 20.7667 11.9304 20.7338 11.2079C20.7226 10.6456 20.6162 10.0893 20.419 9.56269C20.2488 9.11068 19.9821 8.70126 19.6374 8.36301C19.2991 8.01828 18.8897 7.75153 18.4377 7.5814C17.911 7.3842 17.3548 7.27775 16.7925 7.26656C16.0706 7.2343 15.839 7.22656 14.0003 7.22656Z"
+							fill="white"
+						/>
+						<path
+							d="M14.0007 10.5234C13.3127 10.5234 12.6401 10.7275 12.068 11.1097C11.4959 11.492 11.0501 12.0353 10.7868 12.6709C10.5235 13.3066 10.4546 14.006 10.5888 14.6808C10.723 15.3556 11.0544 15.9755 11.5409 16.462C12.0274 16.9485 12.6472 17.2798 13.322 17.414C13.9968 17.5482 14.6963 17.4794 15.3319 17.2161C15.9676 16.9528 16.5109 16.5069 16.8931 15.9348C17.2754 15.3627 17.4794 14.6902 17.4794 14.0021C17.4794 13.0795 17.1129 12.1947 16.4605 11.5423C15.8081 10.8899 14.9233 10.5234 14.0007 10.5234ZM14.0007 16.2602C13.5541 16.2602 13.1175 16.1278 12.7462 15.8797C12.3748 15.6315 12.0854 15.2789 11.9145 14.8663C11.7436 14.4537 11.6989 13.9996 11.786 13.5616C11.8731 13.1236 12.0882 12.7213 12.404 12.4055C12.7198 12.0897 13.1221 11.8746 13.5602 11.7875C13.9982 11.7003 14.4522 11.7451 14.8648 11.916C15.2774 12.0869 15.6301 12.3763 15.8782 12.7476C16.1263 13.119 16.2587 13.5555 16.2587 14.0021C16.2587 14.601 16.0208 15.1754 15.5974 15.5988C15.1739 16.0223 14.5996 16.2602 14.0007 16.2602Z"
+							fill="white"
+						/>
+						<path
+							d="M17.6166 11.1981C18.0656 11.1981 18.4295 10.8341 18.4295 10.3852C18.4295 9.93621 18.0656 9.57227 17.6166 9.57227C17.1677 9.57227 16.8037 9.93621 16.8037 10.3852C16.8037 10.8341 17.1677 11.1981 17.6166 11.1981Z"
+							fill="white"
+						/>
+					</svg>
+				</a>
+				<a id="linkedin" href="#">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="28"
+						height="28"
+						viewBox="0 0 28 28"
+						fill="none"
+					>
+						<circle cx="14" cy="14" r="14" fill="#3A3756" />
+						<g clip-path="url(#clip0_42_230)">
+							<path
+								d="M19.1142 8H8.88583C8.6509 8 8.42558 8.09333 8.25945 8.25945C8.09333 8.42558 8 8.6509 8 8.88583V19.1142C8 19.3491 8.09333 19.5744 8.25945 19.7405C8.42558 19.9067 8.6509 20 8.88583 20H19.1142C19.3491 20 19.5744 19.9067 19.7405 19.7405C19.9067 19.5744 20 19.3491 20 19.1142V8.88583C20 8.6509 19.9067 8.42558 19.7405 8.25945C19.5744 8.09333 19.3491 8 19.1142 8ZM11.5767 18.2225H9.7725V12.4917H11.5767V18.2225ZM10.6733 11.6975C10.4687 11.6963 10.269 11.6346 10.0994 11.52C9.92978 11.4055 9.79792 11.2433 9.72044 11.0538C9.64296 10.8644 9.62332 10.6563 9.66402 10.4557C9.70471 10.2552 9.8039 10.0711 9.94908 9.92689C10.0943 9.78264 10.2789 9.68463 10.4797 9.64523C10.6806 9.60583 10.8886 9.6268 11.0775 9.70549C11.2664 9.78419 11.4278 9.91708 11.5412 10.0874C11.6547 10.2577 11.7152 10.4578 11.715 10.6625C11.7169 10.7995 11.6913 10.9355 11.6395 11.0624C11.5878 11.1893 11.511 11.3045 11.4138 11.401C11.3166 11.4976 11.2009 11.5736 11.0737 11.6246C10.9465 11.6755 10.8103 11.7003 10.6733 11.6975ZM18.2267 18.2275H16.4233V15.0967C16.4233 14.1733 16.0308 13.8883 15.5242 13.8883C14.9892 13.8883 14.4642 14.2917 14.4642 15.12V18.2275H12.66V12.4958H14.395V13.29H14.4183C14.5925 12.9375 15.2025 12.335 16.1333 12.335C17.14 12.335 18.2275 12.9325 18.2275 14.6825L18.2267 18.2275Z"
+								fill="white"
+							/>
+						</g>
+						<defs>
+							<clipPath id="clip0_42_230">
+								<rect width="12" height="12" fill="white" transform="translate(8 8)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</span>
 		</div>
-		<div class="flex-col gap-4 hidden">
-			<h3 class="font-bold mb-2">Product</h3>
-			<a href="/framework">About Us</a>
-			<a href="/framework">Values</a>
-			<a href="/framework">Careers</a>
-			<a href="/framework">Investors</a>
+		<div class="flex w-full md:w-2/5 justify-between mt-10">
+			<div class="flex-col gap-4 hidden">
+				<h3 class="font-bold mb-2">Product</h3>
+				<a href="/framework">Framework</a>
+				<a href="/framework">Placeholder 1</a>
+				<a href="/framework">Placeholder 2</a>
+				<a href="/framework">Placeholder 3</a>
+			</div>
+			<div class="flex-col gap-4 hidden">
+				<h3 class="font-bold mb-2">Product</h3>
+				<a href="/framework">About Us</a>
+				<a href="/framework">Values</a>
+				<a href="/framework">Careers</a>
+				<a href="/framework">Investors</a>
+			</div>
+			<div class="flex flex-col gap-4">
+				<h3 class="font-bold mb-2">Access</h3>
+				<a  class="hidden" href="/framework">Blog</a>
+				<a href="/https://calendly.com/phrazor/phrazor-oi-introductory-meeting">Book a demo</a>
+				<a href="#">Login</a>
+			</div>
 		</div>
-		<div class="flex flex-col gap-4">
-			<h3 class="font-bold mb-2">Access</h3>
-			<a  class="hidden" href="/framework">Blog</a>
-			<a href="/https://calendly.com/phrazor/phrazor-oi-introductory-meeting">Book a demo</a>
-			<a href="#">Login</a>
+		<img
+			alt=""
+			src="/assets/illustrations/shape-3.svg"
+			class="hidden md:block absolute pointer-events-none -z-10"
+			id="shape-3"
+		/>
+		<img
+			alt=""
+			src="/assets/illustrations/shape-4.svg"
+			class="hidden md:block absolute pointer-events-none -z-10"
+			id="shape-4"
+		/>
+		<img
+			alt=""
+			src="/assets/illustrations/shape-5.svg"
+			class="block md:hidden absolute pointer-events-none -z-10"
+			id="shape-5"
+		/>
+		<img
+			alt=""
+			src="/assets/illustrations/shape-6.svg"
+			class="block md:hidden absolute pointer-events-none -z-10 bottom-0 right-0"
+			id="shape-6"
+		/>
+		<div
+			id="credits"
+			class="w-full flex flex-col text-sm py-2 absolute bottom-0 md:bottom-10 left-0 usp-width md:left-1/2 md:-translate-x-1/2 h-30"
+		>
+			<div class="mx-auto md:mx-0 md:w-full bg-[#262A3A] h-0.5 mb-3 md:mb-8 w-4/5" />
+			<span class="flex flex-col md:flex-row items-center md:justify-between">
+				<span>Copyright &#64; Phrazor.io. All rights reserved</span>
+				<br class="md:hidden" />
+				<span class="whitespace-nowrap wrap flex gap-4"
+					><a class="underline text-[#13B6EC]" href="#">Terms of Service</a>
+					<div class="w-0.5 h-6 bg-[#2F3443]" />
+					<a class="underline text-[#13B6EC]" href="#">Privacy Policy</a></span
+				>
+			</span>
 		</div>
-	</div>
-	<img
-		alt=""
-		src="/assets/illustrations/shape-3.svg"
-		class="hidden md:block absolute pointer-events-none -z-10"
-		id="shape-3"
-	/>
-	<img
-		alt=""
-		src="/assets/illustrations/shape-4.svg"
-		class="hidden md:block absolute pointer-events-none -z-10"
-		id="shape-4"
-	/>
-	<img
-		alt=""
-		src="/assets/illustrations/shape-5.svg"
-		class="block md:hidden absolute pointer-events-none -z-10"
-		id="shape-5"
-	/>
-	<img
-		alt=""
-		src="/assets/illustrations/shape-6.svg"
-		class="block md:hidden absolute pointer-events-none -z-10 bottom-0 right-0"
-		id="shape-6"
-	/>
-	<div
-		id="credits"
-		class="w-full flex flex-col text-sm py-2 absolute bottom-0 md:bottom-10 left-0 md:px-40 h-30"
-	>
-		<div class="mx-auto md:mx-0 md:w-full bg-[#262A3A] h-0.5 mb-3 md:mb-8 w-4/5" />
-		<span class="flex flex-col md:flex-row items-center md:justify-between">
-			<span>Copyright &#64; Phrazor.io. All rights reserved</span>
-			<br class="md:hidden" />
-			<span class="whitespace-nowrap wrap flex gap-4"
-				><a class="underline text-[#13B6EC]" href="#">Terms of Service</a>
-				<div class="w-0.5 h-6 bg-[#2F3443]" />
-				<a class="underline text-[#13B6EC]" href="#">Privacy Policy</a></span
-			>
-		</span>
 	</div>
 </footer>
 
@@ -773,16 +779,16 @@ export const prerender = true;
 		filter: blur(90.70046997070312px);
 	}
 	#shape-13 {
-		width: 340px;
-		height: 126px;
-		left: 76px;
-		top: 730px;
+		height: auto;
+		padding: 4px 0;
+		left: 22px;
+		top: 760px;
 	}
 	#shape-14 {
-		width: 360px;
-		height: 126px;
-		left: 66px;
-		top: 1090px;
+		height: auto;
+		padding: 4px 0;
+		left: 22px;
+		top: 1130px;
 	}
 	.enumerator {
 		border-radius: 32px;
@@ -1007,10 +1013,21 @@ export const prerender = true;
 	}
 	const {x, width} = c.firstElementChild.getBoundingClientRect();
 	const widthContent = c.lastElementChild.getBoundingClientRect().x - x + width;
+	const lines = document.querySelectorAll(".lines");
+	for (const line of lines) {
+		line.style.width = `${widthContent / 2}px`;
+	}
+	const uspEls = document.querySelectorAll(".usp-width");
 	if(window.matchMedia("(min-width: 768px)").matches) {
-		header.firstElementChild.style.width = widthContent + "px";
+		const atf = document.getElementById("atf");
+		atf.style.paddingLeft = `${(window.innerWidth - widthContent) / 2}px`;
+		for (const el of uspEls) {
+			el.style.width = `${widthContent}px`;
+		}
 	} else {
-		header?.classList.add("w-full");
+		for (const el of uspEls) {
+			el?.classList.add("w-full");
+		}
 	}
 	header.classList.remove("!invisible");
 </script>
