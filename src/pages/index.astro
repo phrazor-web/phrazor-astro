@@ -5,6 +5,7 @@ export const prerender = true;
 ---
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="icon" href="/assets/icons/favicon.svg" />
 </head>
 <Nav />
 <script>
@@ -183,7 +184,7 @@ export const prerender = true;
 </section>
 <section
 	id="text"
-	class="flex w-screen px-10 gap-4 justify-around md:justify-center md:gap-40 items-center md:py-20 flex-wrap"
+	class="flex w-screen px-10 gap-4 justify-around md:justify-center md:gap-40 items-center md:pb-10 md:pt-0 flex-wrap"
 >
 	<p class="flex gap-4 items-center">
 		<span class="font-bold text-3xl md:text-6xl">10M+</span>
@@ -286,7 +287,7 @@ export const prerender = true;
 	>
 </section>
 <section
-	class="w-screen h-[60vh] px-2 relative text-black flex flex-col items-center text-center justify-center gap-10"
+	class="w-screen h-[60vh] px-2 relative text-black flex flex-col items-center text-center justify-center gap-4"
 	id="newsletter"
 >
 	<img
@@ -317,7 +318,7 @@ export const prerender = true;
 	class="text-white relative px-4 md:p-0 w-4/5 md:w-screen"
 	id="how-it-works"
 >
-	<div class="md:gap-28 flex flex-col usp-width mx-auto relative">
+	<div class="md:gap-20 flex flex-col usp-width mx-auto relative">
 		<div class="text-center flex flex-col py-16 px-4 md:p-0 md:w-1/2 md:py-32 md:mx-auto gap-10">
 			<h2 class="leading-normal text-3xl md:text-[42px] font-bold">How it works?</h2>
 			<h3 class="text-sm md:text-lg leading-normal opacity-60">
@@ -386,7 +387,7 @@ export const prerender = true;
 		>
 			<div class="flex flex-col gap-4">
 				<h3 class="text-sm leading-normal text-[#13B6EC] md:text-base">
-					Customized content in an instant
+					Customized content <br /> in an instant
 				</h3>
 				<h2 class="md:text-4xl text-3xl">Any questions?</h2>
 				<p class="text-sm leading-normal text-[#A0A0A0] md:text-base">
@@ -489,8 +490,15 @@ export const prerender = true;
 </section>
 <section
 	id="grow"
-	class="text-black flex flex-col h-[300px] md:h-[400px] text-center justify-center gap-4 items-center relative"
+	class="text-black flex flex-col h-[300px] md:h-[400px] text-center justify-center gap-4 items-center overflow-y-hidden relative"
 >
+	<picture>
+		<!-- Use the mobile image by default -->
+		<source srcset="/assets/illustrations/grow-bg.svg" media="(min-width: 746px)">
+		<!-- Use the larger image for screens wider than 746px -->
+		<img id="grow-bg" src="/assets/illustrations/grow-mobile-bg.svg" class="absolute left-0 bottom-0 w-full h-full -z-10 object-cover">
+  	</picture>
+  
 	<h2 class="font-bold text-3xl md:text-[42px] md:w-1/2">Ready to grow your content production?</h2>
 	<h3 class="text-lg leading-relaxed">We are excited to show you phrazor.io</h3>
 	<button class="btn primary">Get started now</button>
@@ -512,7 +520,7 @@ export const prerender = true;
 			</p>
 			<div class="relative w-full">
 				<input type="email" class="w-full py-4 px-4 rounded-[5px] text-[#71717A] bg-white bg-opacity-10" placeholder="Enter your email" />
-				<button class="absolute right-1.5 !py-3.5 !rounded-[4px] bottom-1.5 btn primary get-started">Subscribe</button>
+				<button class="absolute right-1.5 h-[calc(100%-0.75rem)] bottom-1.5 btn primary get-started">Subscribe</button>
 			</div>
 			<span class="flex gap-4">
 				<a id="twitter" href="#"
@@ -805,11 +813,7 @@ export const prerender = true;
 		font-weight: 700;
 		color: black;
 	}
-	#grow {
-		background-image: url('/assets/illustrations/grow-mobile-bg.svg');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+
 	.check {
 		position: relative;
 	}
@@ -824,11 +828,6 @@ export const prerender = true;
 		.enumerator {
 			width: 50px;
 			height: 50px;
-		}
-		#grow {
-			background-image: url('/assets/illustrations/grow-bg.svg');
-			background-repeat: no-repeat;
-			background-position: -10px -10px;
 		}
 	}
 </style>
